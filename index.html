@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deepak Yadav</title>
+    <script src="./scripts/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" /> 
+
+  </head>
+  <body onload="addhtml()">
+    <div class="sidebar">
+      <ul class="nav">
+        <li>
+          <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
+        </li>
+        <li>
+          <a href="#about"><i class="fa-regular fa-address-card"></i>About</a>
+        </li>
+        <li>
+          <a href="#certifi"
+            ><i class="fa-regular fa-clipboard"></i>Certificates</a
+          >
+        </li>
+        <li>
+          <a href="#contact"><i class="fa-solid fa-phone"></i>Contact</a>
+        </li>
+        <hr />
+        <li>
+          <a href="#"><i class="fa-solid fa-file"></i>Resume</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="center">
+      <div class="land">
+        <div>
+          <h1>Hey,</h1>
+          <h1>you're most welcome</h1>
+          <h1>to the</h1>
+          <h1>portfolio of <span>Deepak Yadav</span></h1>
+        </div>
+        <button onclick="hidelanding()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-move-down down"
+          >
+            <path d="M8 18L12 22L16 18" />
+            <path d="M12 2V22" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="home" id="home">
+      <div class="type-area">
+        <h3>Hi There,</h3>
+        <h2>I'm <span>Deepak Yadav</span></h2>
+        <div class="typewriter">
+          <p>I am a</p>
+          <p class="type"></p>
+        </div>
+      </div>
+    </div>
+
+    <section class="wave">
+      <div class="wave-div2">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <div class="about" id="about">
+      <div class="lowdiv" id="lowdiv">
+        <div class="buttons">
+          <button class="but active-button" onclick="updateskill('.cpp')" href="#">C++</button>
+          <button class="but" onclick="updateskill('.c')" href="#">C</button>
+          <button class="but" onclick="updateskill('.python')" href="#">Python</button>
+          <button class="but" onclick="updateskill('.webdev')" href="#">Web Dev</button>
+        </div>
+        <div class="skill">
+        </div>
+      </div>
+      <div class="box">
+        <div class="skills b1 cpp">
+          <h2>C++ Programming</h2>
+          <p>
+            I am an aspiring programmer proficient in C++ data structures and
+            algorithms. My CodeChef rating stands at 1412, reflecting my
+            dedication and passion for competitive coding. Excited for future
+            challenges! 🚀
+          </p>
+        </div>
+        <div class="skills b2 python">
+          <h2>Python</h2>
+          <p>
+            I am a Python enthusiast with knowledge of basic syntax. I have
+            hands-on experience in creating projects with MySQL connectivity,
+            and I've also developed a game using the Pygame module. Excited to
+            continue exploring Python's versatility! 🐍🎮
+          </p>
+        </div>
+        <div class="skills b3 c">
+          <h2>C Programming</h2>
+          <p>
+            I have a solid foundation in C programming from my college semester,
+            but I've transitioned to C++ for competitive coding, leveraging its
+            powerful features to tackle challenges efficiently and effectively.
+            Ready to conquer new coding horizons! 🚀💻
+          </p>
+        </div>
+        <div class="skills b4 webdev">
+          <h2>Web Development</h2>
+          <p>
+            I am a skilled front end web developer proficient in HTML, CSS,
+            JavaScript, React.js, jQuery, and Bootstrap. Currently, I am honing
+            my expertise in backend frameworks, taking my web development skills
+            to the next level. Excited to build innovative and user-friendly web
+            applications! 🌐💻
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="projects">
+      <div class="top">
+        <h1>PROJECTS</h1>
+        <div class="hr"></div>
+        <div class="project">
+          
+        </div>
+      </div>
+
+
+    </section>
+
+    <div class="certifi" id="certifi">
+      <div class="carousel">
+        <div class="carousel-inner">
+          <img src="./assets/react_basics.jpg" alt="Image 1" />
+          <img src="./assets/web_d.jpg" alt="Image 2" />
+        </div>
+        <a class="carousel-prev">&larr;</a>
+        <a class="carousel-next">&rarr;</a>
+      </div>
+    </div>
+
+    <div class="contact" id="contact">
+      <div class="review">
+        <div class="title">
+          <h3>Drop a Review</h3>
+        </div>
+
+        <form action="post">
+          <input type="text" placeholder="Deepak Yadav" />
+          <input type="text" placeholder="work.deepak04@gmail.com" />
+          <textarea
+            name="msg"
+            id="msg"
+            cols="30"
+            rows="10"
+            placeholder="Enter your review here"
+          ></textarea>
+          <input type="submit" />
+        </form>
+      </div>
+    </div>
+    <section class="wave">
+      <div class="tri">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+        </svg>
+      </div>
+    </section>
+    <div class="contact-socials">
+      <h3 class="socials-heading">Wanna Reach Out ?</h3>
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <footer>
+      <ul class="updates">
+        <li>deepaksyadav04@gmail.com</li>
+        <li>Last Updated: 8 Aug 2023</li>
+      </ul>
+      <div class="rights">
+        <p>&copy; All rights Reserved</p>
+        <p>Author: Deepak Yadav</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
